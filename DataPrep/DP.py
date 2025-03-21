@@ -12,7 +12,7 @@ def load_data(filepath, ryear1, ryear2):
     
 def map_columns(df):
     mappings = {
-        'Eduation': {
+        'Education': {
             1.0 : '8th grade or less',
             2.0 : '9 - 12th grade, no diploma',
             3.0 : 'High school graduate or GED completed',
@@ -155,7 +155,7 @@ def map_columns(df):
             443:'Undetermined Drug Poisoning'
         }
     }
-    for column, mapping in mapping.items():
+    for column, mapping in mappings.items():
         df[column] = df[column].map(mapping)
     return df
 
