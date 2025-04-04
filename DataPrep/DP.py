@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 def load_data(filepath, ryear1, ryear2):
     try:
